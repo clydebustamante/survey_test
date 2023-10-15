@@ -34,6 +34,7 @@ class _SurveyScreenState extends State<SurveyScreen> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
+          physics: BouncingScrollPhysics(),
           child: Column(
             children: [
               SizedBox(
@@ -41,6 +42,7 @@ class _SurveyScreenState extends State<SurveyScreen> {
                 child: SurveyHeader(),
               ),
               ListView.builder(
+                physics: NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 itemCount: userExperiences.length, // Adjust as needed
                 itemBuilder: (context, index) {

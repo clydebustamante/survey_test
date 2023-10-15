@@ -5,7 +5,7 @@ import 'package:olh_rafi/survey_screen.dart';
 
 void main() => runApp(
       DevicePreview(
-        enabled: !kReleaseMode,
+        enabled: kReleaseMode,
         builder: (context) => MyApp(), // Wrap your app
       ),
     );
