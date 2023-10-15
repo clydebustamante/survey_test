@@ -161,6 +161,7 @@ class _SurveyScreenState extends State<SurveyScreen> {
                   ),
                 ),
               ),
+              SizedBox(height: 25),
             ],
           ),
         ),
