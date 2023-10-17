@@ -6,7 +6,7 @@ import 'package:olh_rafi/survey_screen.dart';
 void main() => runApp(
       DevicePreview(
         enabled: !kReleaseMode,
-        builder: (context) => MyApp(), // Wrap your app
+        builder: (context) => const MyApp(),
       ),
     );
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
-      home: SurveyScreen(),
+      home: const SurveyScreen(),
     );
   }
 }
